@@ -1,0 +1,114 @@
+body {
+    overflow-x: hidden;
+    height: 100vh;
+    margin: 0;
+}
+h1 {
+    font-size: 48px;
+}
+ul {
+    padding: 0;
+    margin: 5px 0 20px;
+}
+li {
+    position: relative;
+    list-style: none;
+    height: 33.5px;
+}
+div,
+h2 {
+    color: #23235F;
+}
+li:first-child {
+    padding-top: 0;
+}
+li:last-child {
+    padding-bottom: 0;
+}
+input {
+    border: none;
+    border-bottom: 1px solid #23235F;
+    background: transparent;
+    color: #23235F;
+}
+button,
+button input {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.todo-section {
+    width: 600px;
+    min-height: 80vh;
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
+    padding: 10vh 20px;
+}
+.container {
+    background: #EAEBF7;
+    padding: 30px;
+    border-radius: 16px;
+}
+.added-task-block {
+    margin-bottom: 20px;
+}
+h2 {
+    border-bottom: 2px solid #23235F;
+    padding-bottom: 5px;
+    margin: 0 0 10px;
+}
+.input-block {
+    display: flex;
+    justify-content: space-between;
+}
+#input-task {
+    width: 60%;
+}
+#add-task {
+    background: #3033AE;
+    color: #fff;
+    padding: 7px 20px;
+    border-radius: 6px;
+    /*margin-left: 30px;*/
+}
+.action-buttons {
+    position: absolute;
+    display: inline-block;
+    right: 0;
+}
+
+button.edit:after {
+    content: url("../image/edit.svg");
+}
+button.delete:after {
+    content: url("../image/delete.svg");
+}
+button.save:after {
+    content: url("../image/save3.svg");
+}
+li input {
+    display: none;
+}
+input[type="checkbox"],
+.editMode input {
+    display: inline-block;
+}
+.editMode label {
+    display: none;
+}
+#completed-tasks li {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+.save-block {
+    display: flex;
+    justify-content: center;
+}
+#save-progress {
+    background: #3033AE;
+    color: #fff;
+    padding: 12px 40px;
+    border-radius: 6px;
+}
